@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A beginner-friendly website template for AI-assisted coding workshops.">
+    <title>Vibe Site Template</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top" data-site-name>Vibe Site</a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#build-log">Build Log</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow" data-eyebrow>First Website</p>
+          <h1 data-hero-title>Build something worth showing.</h1>
+          <p class="hero-text" data-description>
+            A clean starter site for students learning to build, edit, and deploy with AI.
+          </p>
+          <div class="hero-actions" data-actions></div>
+        </div>
+        <div class="hero-media" aria-label="Abstract website preview">
+          <img src="assets/hero.svg" alt="Layered website mockup with colourful panels">
+        </div>
+      </section>
+
+      <section class="section intro-section" aria-labelledby="intro-title">
+        <div>
+          <p class="section-kicker">What This Is</p>
+          <h2 id="intro-title" data-tagline>A launchpad for first-time builders.</h2>
+        </div>
+        <p data-intro>
+          Edit the content, adjust the colors, preview the result, and deploy it. Small changes compound quickly.
+        </p>
+      </section>
+
+      <section class="section" id="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="section-kicker">Highlights</p>
+          <h2 id="features-title">Make It Yours</h2>
+        </div>
+        <div class="card-grid" data-features></div>
+      </section>
+
+      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="section-kicker">Gallery</p>
+          <h2 id="gallery-title">Project Snapshots</h2>
+        </div>
+        <div class="gallery-grid" data-gallery></div>
+      </section>
+
+      <section class="section split-section" id="build-log" aria-labelledby="build-title">
+        <div class="section-heading">
+          <p class="section-kicker">Build Log</p>
+          <h2 id="build-title">Ship In Small Steps</h2>
+        </div>
+        <ol class="timeline" data-steps></ol>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title" data-contact-title>Ready to launch?</h2>
+          <p data-contact-text>Share your project, gather feedback, and keep improving.</p>
+        </div>
+        <div class="contact-links" data-contact-links></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Built with HTML, CSS, JavaScript, GitHub, and Vercel.
+      </p>
+      <button class="theme-button" type="button" data-theme-toggle aria-label="Toggle colour theme">
+        Theme
+      </button>
+    </footer>
+
+    <script src="site.config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+

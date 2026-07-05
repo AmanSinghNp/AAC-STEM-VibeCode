@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 720" role="img" aria-labelledby="title desc">
+  <title id="title">Layered website mockup</title>
+  <desc id="desc">A colourful abstract website preview with panels, cards, and image blocks.</desc>
+  <rect width="820" height="720" rx="44" fill="#15212c"/>
+  <circle cx="690" cy="96" r="82" fill="#f59e0b"/>
+  <circle cx="126" cy="598" r="116" fill="#be123c"/>
+  <path d="M92 154c0-39.8 32.2-72 72-72h392c39.8 0 72 32.2 72 72v316c0 39.8-32.2 72-72 72H164c-39.8 0-72-32.2-72-72V154Z" fill="#f7f3ea"/>
+  <path d="M92 154c0-39.8 32.2-72 72-72h392c39.8 0 72 32.2 72 72v52H92v-52Z" fill="#ffffff"/>
+  <circle cx="142" cy="144" r="14" fill="#be123c"/>
+  <circle cx="184" cy="144" r="14" fill="#f59e0b"/>
+  <circle cx="226" cy="144" r="14" fill="#0f766e"/>
+  <rect x="142" y="258" width="210" height="34" rx="17" fill="#0f766e"/>
+  <rect x="142" y="322" width="322" height="22" rx="11" fill="#d5dedb"/>
+  <rect x="142" y="364" width="266" height="22" rx="11" fill="#d5dedb"/>
+  <rect x="142" y="432" width="116" height="58" rx="12" fill="#f59e0b"/>
+  <rect x="282" y="432" width="116" height="58" rx="12" fill="#be123c"/>
+  <rect x="422" y="432" width="116" height="58" rx="12" fill="#0f766e"/>
+  <path d="M504 248c0-19.9 16.1-36 36-36h112c19.9 0 36 16.1 36 36v228c0 19.9-16.1 36-36 36H540c-19.9 0-36-16.1-36-36V248Z" fill="#ffffff" stroke="#15212c" stroke-width="12"/>
+  <rect x="536" y="276" width="120" height="94" rx="18" fill="#d5dedb"/>
+  <rect x="536" y="396" width="92" height="18" rx="9" fill="#0f766e"/>
+  <rect x="536" y="432" width="112" height="16" rx="8" fill="#d5dedb"/>
+  <rect x="536" y="462" width="72" height="16" rx="8" fill="#d5dedb"/>
+</svg>
+
