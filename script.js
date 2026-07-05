@@ -18,11 +18,21 @@
     });
   };
 
+  const isExternalLink = (href) => /^https?:\/\//.test(href);
+
+  const decorateExternalLink = (link) => {
+    if (isExternalLink(link.href)) {
+      link.target = "_blank";
+      link.rel = "noreferrer";
+    }
+  };
+
   const createLink = (item) => {
     const link = document.createElement("a");
     link.href = item.href;
     link.textContent = item.label;
     link.className = item.style === "primary" ? "button primary" : "button secondary";
+    decorateExternalLink(link);
     return link;
   };
 
@@ -31,34 +41,61 @@
     target.replaceChildren(...config.actions.map(createLink));
   };
 
+  const renderStats = () => {
+    const target = document.querySelector("[data-stats]");
+    const stats = config.stats.map((stat) => {
+      const item = document.createElement("li");
+      const value = document.createElement("strong");
+      const label = document.createElement("span");
+
+      value.textContent = stat.value;
+      label.textContent = stat.label;
+      item.append(value, label);
+
+      return item;
+    });
+
+    target.replaceChildren(...stats);
+  };
+
   const renderFeatures = () => {
     const target = document.querySelector("[data-features]");
     const cards = config.features.map((feature) => {
       const article = document.createElement("article");
+      const icon = document.createElement("span");
+      const title = document.createElement("h3");
+      const text = document.createElement("p");
+
       article.className = "feature-card";
-      article.innerHTML = `
-        <span class="card-icon">${feature.icon}</span>
-        <h3>${feature.title}</h3>
-        <p>${feature.text}</p>
-      `;
+      icon.className = "card-icon";
+      icon.textContent = feature.icon;
+      title.textContent = feature.title;
+      text.textContent = feature.text;
+      article.append(icon, title, text);
+
       return article;
     });
+
     target.replaceChildren(...cards);
   };
 
   const renderGallery = () => {
     const target = document.querySelector("[data-gallery]");
-    const cards = config.gallery.map((item, index) => {
+    const cards = config.gallery.map((item) => {
       const article = document.createElement("article");
-      article.className = "gallery-card";
-      article.style.setProperty("--gallery-index", index + 1);
-      article.innerHTML = `
-        <span>${item.label}</span>
-        <h3>${item.title}</h3>
-        <p>${item.text}</p>
-      `;
+      const label = document.createElement("span");
+      const title = document.createElement("h3");
+      const text = document.createElement("p");
+
+      article.className = "work-card";
+      label.textContent = item.label;
+      title.textContent = item.title;
+      text.textContent = item.text;
+      article.append(label, title, text);
+
       return article;
     });
+
     target.replaceChildren(...cards);
   };
 
@@ -69,6 +106,7 @@
       item.textContent = step;
       return item;
     });
+
     target.replaceChildren(...steps);
   };
 
@@ -78,8 +116,10 @@
       const link = document.createElement("a");
       link.href = item.href;
       link.textContent = item.label;
+      decorateExternalLink(link);
       return link;
     });
+
     target.replaceChildren(...links);
   };
 
@@ -101,10 +141,10 @@
   setText("[data-contact-title]", config.contact.title);
   setText("[data-contact-text]", config.contact.text);
   renderActions();
+  renderStats();
   renderFeatures();
   renderGallery();
   renderSteps();
   renderContactLinks();
   setupThemeToggle();
 })();
-

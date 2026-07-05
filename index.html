@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A beginner-friendly website template for AI-assisted coding workshops.">
-    <title>Vibe Site Template</title>
+    <meta
+      name="description"
+      content="Portfolio for Md. Razu Ahammed Molla, a Sydney-based senior full-stack engineer and engineering lead."
+    >
+    <title>Md. Razu Ahammed Molla</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -13,61 +16,73 @@
 
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#top" data-site-name>Vibe Site</a>
+        <a class="brand" href="#top" data-site-name>Md. Razu Ahammed Molla</a>
         <div class="nav-links">
-          <a href="#features">Features</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#build-log">Build Log</a>
+          <a href="#about">About</a>
+          <a href="#strengths">Strengths</a>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="eyebrow" data-eyebrow>First Website</p>
-          <h1 data-hero-title>Build something worth showing.</h1>
-          <p class="hero-text" data-description>
-            A clean starter site for students learning to build, edit, and deploy with AI.
-          </p>
-          <div class="hero-actions" data-actions></div>
-        </div>
-        <div class="hero-media" aria-label="Abstract website preview">
-          <img src="assets/hero.svg" alt="Layered website mockup with colourful panels">
+      <section class="hero" id="top" aria-label="Portfolio introduction">
+        <img
+          class="hero-image"
+          src="assets/razu-hero.png"
+          alt="Engineering workspace with architecture diagrams and code editor"
+        >
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow" data-eyebrow>Senior Full-Stack Engineer</p>
+            <h1 data-hero-title>Md. Razu Ahammed Molla</h1>
+            <p class="hero-text" data-description>
+              Sydney-based engineering lead building production SaaS across fintech, logistics,
+              and telecom.
+            </p>
+            <div class="hero-actions" data-actions></div>
+          </div>
         </div>
       </section>
 
-      <section class="section intro-section" aria-labelledby="intro-title">
+      <section class="proof-strip" aria-label="Professional highlights">
+        <ul class="hero-stats" data-stats></ul>
+      </section>
+
+      <section class="section intro-section" id="about" aria-labelledby="about-title">
         <div>
-          <p class="section-kicker">What This Is</p>
-          <h2 id="intro-title" data-tagline>A launchpad for first-time builders.</h2>
+          <p class="section-kicker">About</p>
+          <h2 id="about-title" data-tagline>Hands-on delivery with technical leadership.</h2>
         </div>
         <p data-intro>
-          Edit the content, adjust the colors, preview the result, and deploy it. Small changes compound quickly.
+          Razu builds reliable software systems and leads engineering teams through practical
+          architecture, clear execution, and measurable product delivery.
         </p>
       </section>
 
-      <section class="section" id="features" aria-labelledby="features-title">
+      <section class="section" id="strengths" aria-labelledby="strengths-title">
         <div class="section-heading">
-          <p class="section-kicker">Highlights</p>
-          <h2 id="features-title">Make It Yours</h2>
+          <p class="section-kicker">Strengths</p>
+          <h2 id="strengths-title">Where he creates leverage</h2>
         </div>
         <div class="card-grid" data-features></div>
       </section>
 
-      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <section class="section work-section" id="work" aria-labelledby="work-title">
         <div class="section-heading">
-          <p class="section-kicker">Gallery</p>
-          <h2 id="gallery-title">Project Snapshots</h2>
+          <p class="section-kicker">Work</p>
+          <h2 id="work-title">Production domains</h2>
         </div>
-        <div class="gallery-grid" data-gallery></div>
+        <div class="work-grid" data-gallery></div>
       </section>
 
-      <section class="section split-section" id="build-log" aria-labelledby="build-title">
+      <section class="section split-section" id="experience" aria-labelledby="experience-title">
         <div class="section-heading">
-          <p class="section-kicker">Build Log</p>
-          <h2 id="build-title">Ship In Small Steps</h2>
+          <p class="section-kicker">Experience</p>
+          <h2 id="experience-title">Built for complex teams and real users</h2>
         </div>
         <ol class="timeline" data-steps></ol>
       </section>
@@ -75,17 +90,17 @@
       <section class="section contact-section" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="section-kicker">Contact</p>
-          <h2 id="contact-title" data-contact-title>Ready to launch?</h2>
-          <p data-contact-text>Share your project, gather feedback, and keep improving.</p>
+          <h2 id="contact-title" data-contact-title>Available for senior IC and tech lead roles.</h2>
+          <p data-contact-text>
+            Based in Sydney and open to engineering opportunities with ambitious product teams.
+          </p>
         </div>
         <div class="contact-links" data-contact-links></div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>
-        Built with HTML, CSS, JavaScript, GitHub, and Vercel.
-      </p>
+      <p>Portfolio for Md. Razu Ahammed Molla.</p>
       <button class="theme-button" type="button" data-theme-toggle aria-label="Toggle colour theme">
         Theme
       </button>
@@ -95,4 +110,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-

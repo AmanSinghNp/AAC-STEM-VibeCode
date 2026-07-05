@@ -1,87 +1,100 @@
 window.SITE_CONFIG = {
-  name: "Signal Studio",
-  eyebrow: "Student Launch Site",
-  heroTitle: "Make your first website feel real.",
-  tagline: "A clean launchpad for creative builders.",
+  name: "Md. Razu Ahammed Molla",
+  eyebrow: "Senior Full-Stack Engineer & Engineering Lead",
+  heroTitle: "Md. Razu Ahammed Molla",
+  tagline: "Hands-on delivery with technical leadership.",
   description:
-    "Turn a rough idea into a live website with simple files, readable code, and a deploy link you can share.",
+    "Sydney-based senior full-stack engineer building production SaaS platforms across fintech, logistics, and telecom.",
   intro:
-    "This template is made for quick wins. Change the words, tune the colours, add your own sections, and learn how the pieces fit together.",
+    "With 9 years of production experience, Razu works across Node.js, TypeScript, React, PostgreSQL, microservices, AWS, and GCP. He has led teams of 16 engineers and shipped enterprise products used across Australia, Europe, and Asia.",
   theme: {
-    background: "#f7f3ea",
+    background: "#f5f7fa",
     surface: "#ffffff",
-    text: "#1f2933",
-    muted: "#5f6c7b",
+    text: "#141922",
+    muted: "#64748b",
     primary: "#0f766e",
-    secondary: "#f59e0b",
-    accent: "#be123c"
+    secondary: "#c47a23",
+    accent: "#a21caf"
   },
   actions: [
     {
-      label: "View Work",
-      href: "#gallery",
+      label: "View Experience",
+      href: "#experience",
       style: "primary"
     },
     {
-      label: "Start Editing",
-      href: "https://github.com",
+      label: "Contact",
+      href: "#contact",
       style: "secondary"
+    }
+  ],
+  stats: [
+    {
+      value: "9+",
+      label: "years in production software"
+    },
+    {
+      value: "16",
+      label: "engineers led across delivery teams"
+    },
+    {
+      value: "3",
+      label: "major SaaS domains shipped"
     }
   ],
   features: [
     {
       icon: "01",
-      title: "Easy To Edit",
-      text: "Most of the first changes happen in one file, so beginners can see results quickly."
+      title: "Full-stack systems",
+      text: "Designs and builds end-to-end products with Node.js, TypeScript, React, PostgreSQL, and service-oriented architecture."
     },
     {
       icon: "02",
-      title: "Looks Good Fast",
-      text: "The layout already works on phones and laptops, leaving students free to shape the idea."
+      title: "Engineering leadership",
+      text: "Leads teams through delivery planning, technical direction, code quality, mentoring, and practical trade-off decisions."
     },
     {
       icon: "03",
-      title: "Ready To Deploy",
-      text: "Push to GitHub, import into Vercel, and publish without databases or private keys."
+      title: "Cloud delivery",
+      text: "Ships and operates SaaS products on AWS and GCP with attention to reliability, maintainability, and product velocity."
     }
   ],
   gallery: [
     {
-      title: "Club Website",
-      label: "Team",
-      text: "Introduce a school club, training squad, or creative group."
+      title: "Fintech SaaS",
+      label: "Finance",
+      text: "Production platforms where reliability, data integrity, and secure user flows matter every day."
     },
     {
-      title: "Event Page",
-      label: "Launch",
-      text: "Promote a workshop, mini hackathon, game night, or showcase."
+      title: "Logistics systems",
+      label: "Operations",
+      text: "Workflow-heavy products for distributed teams, real-time coordination, and operational visibility."
     },
     {
-      title: "Portfolio",
-      label: "Profile",
-      text: "Collect projects, skills, and links in one tidy place."
+      title: "Telecom platforms",
+      label: "Scale",
+      text: "Enterprise software built for complex integrations, high usage, and multi-region stakeholders."
     }
   ],
   steps: [
-    "Pick a clear idea.",
-    "Change the words and colours.",
-    "Preview the website on mobile and desktop.",
-    "Push the files to GitHub.",
-    "Deploy with Vercel and share the link."
+    "Senior Full-Stack Engineer with 9 years across production SaaS platforms.",
+    "Specialises in Node.js, TypeScript, React, PostgreSQL, microservices, AWS, and GCP.",
+    "Led engineering teams of up to 16 people through delivery, architecture, and mentoring.",
+    "Shipped products used by enterprise clients across Australia, Europe, and Asia.",
+    "Based in Sydney and open to senior individual contributor or technical lead roles."
   ],
   contact: {
-    title: "Show the room what you made.",
-    text: "A first deploy does not need to be perfect. It needs to exist, load, and make sense.",
+    title: "Available for senior IC and tech lead roles.",
+    text: "Based in Sydney and open to engineering opportunities with ambitious product teams.",
     links: [
       {
-        label: "GitHub",
-        href: "https://github.com"
+        label: "LinkedIn",
+        href: "https://au.linkedin.com/in/razuahammedmolla"
       },
       {
-        label: "Vercel",
-        href: "https://vercel.com"
+        label: "Corexlab",
+        href: "https://www.corexlab.com"
       }
     ]
   }
 };
-
